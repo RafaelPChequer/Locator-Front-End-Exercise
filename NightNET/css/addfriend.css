@@ -1,0 +1,261 @@
+/* Definir as configurações globais para o corpo da página */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    font-family: "Arial", sans-serif;
+  }
+  
+  /* Estilizar o contêiner principal */
+  .container {
+    padding: 100px 25%;
+    display: flex;
+    flex-direction: column;
+    line-height: 2rem;
+    font-size: 1.2em;
+    color: #272262;
+  }
+  
+  /* Estilizar a barra de pesquisa */
+  #searchbar {
+    padding: 15px;
+    border-radius: 5px;
+  }
+  
+  /* Transição para a caixa de pesquisa */
+  input[type=text] {
+    -webkit-transition: width 0.15s ease-in-out;
+    transition: width 0.15s ease-in-out;
+  }
+  
+  /* Estilizar a lista de amigos */
+  #list {
+    background-color: #ffffff80;
+    border-radius: 5px;
+    display: none;
+  }
+  
+  /* Estilizar cada item da lista */
+  .listItem {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 20px;
+    color: #272262;
+  }
+  
+  /* Efeito de hover para os itens da lista */
+  .listItem:hover {
+    background-color: lightgrey;
+  }
+  
+  /* Estilizar o botão em cada item da lista */
+  .listItemButton {
+    background-color: #F900BF;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 30%;
+  }
+  
+  
+  #friendList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #272262;
+    border-radius: 10px;
+    background-color: #ffffff80;
+  } 
+  
+  #friendList li:nth-child(even) {
+    background-color: #8023AD60;
+    color: #272262;
+  }
+  
+  #removeButton {
+    margin: 20px;
+    background-color: #8023AD;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 30%;
+  }
+  
+  .userButton {
+    background-color: #8023AD;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 250px;
+    margin: 5px;
+  }
+  
+  .userButton.active {
+    background-image: linear-gradient(45deg, #FF5733 0%, #D5465C 25%, #AB3585 50%, #8023AD 75%, #5A2790 100%);
+  }
+  
+  .thisOne {
+    background-image: linear-gradient(45deg, #FF5733 0%, #D5465C 25%, #AB3585 50%, #8023AD 75%, #5A2790 100%);
+  }
+  
+  #inicio {
+    background-position: 300px 0;
+    border-radius: 10px;
+  }
+  
+  body {
+    background-image: url("../img/bg-event.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed
+  }
+  
+  #inicio {
+    background-color: #8023AD60;
+  }
+  
+  #titulo {
+    background-color: #ffffff;
+    border-radius: 10px;
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .inicioButton {
+    background-color: #ffffff;
+    color:#272262;
+    border: none;
+    border-radius: 5px;
+    width: 250px;
+    margin: 5px;
+    font-size: 25px;
+  }
+  
+  #adicionarAmigos, #listaAmigos {
+    background-color: #ffffff90;
+    border-radius: 5px;
+  }
+  
+  #name {
+    color: #8023AD;
+    font-weight: bold;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 60px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-shadow: 2px 2px #F900BF;
+    }
+
+    svg {
+      position: absolute;
+      height: 750px;
+      top: -600px;
+      left: -600px;
+      display: block;
+      filter: drop-shadow(10px 20px 5px #F900BF80);
+      transition: all 0.5s ease-out;
+      }
+    
+    svg.open {
+    top: -280px;
+    left: -250px;
+    }
+
+    nav {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    min-height: 100px;
+    }
+    
+    nav #links {
+    display: none;
+    }
+    
+    nav a {
+    font-weight: bolder;
+    display: block;
+    padding: 10px 16px;
+    color: #F900BF;
+    text-decoration: none;
+    font-size: 20px;
+    animation: text 1s;
+    }
+    
+    nav a:hover {
+    text-decoration: underline;
+    color: #F900BF;
+    }
+    
+    #links a {
+    padding-left: 50px;
+    }
+
+    @keyframes text {
+    0% {
+    opacity: 0;
+    transform: translateX(-100px);
+    }
+    50% {
+    opacity: 0;
+    }
+    100% {
+    opacity: 1;
+    transform: none;
+    }
+    }
+
+    #logo {
+
+    animation: text 1s;
+    height: 140px;
+    width: 140px;
+    }
+    
+    .icon i {
+    font-size: 40px;
+    color: #F900BF;
+    }
+
+    a {
+    color: #F900BF;
+    transition: color 0.3s;
+    }
+    
+    a:hover {
+    color: #F900BF;
+    }
+
+    .btn {
+    background-color: #F900BF;
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    }
+    
+    .btn:hover {
+    background-color: #8023AD;
+    }
+
+    #funcao {
+        color: #F900BF;
+    }
+
+    

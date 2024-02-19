@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Página de Eventos</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="../css/event.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <svg id="blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+      <path fill="#8023AD80" d="M34,-60.2C42.4,-54.1,46.4,-41.6,53.9,-30.5C61.3,-19.4,72.2,-9.7,77.9,3.3C83.6,16.3,84,32.5,76,42.6C67.9,52.6,51.4,56.5,37.3,64.8C23.2,73.2,11.6,86.1,-1.4,88.5C-14.4,90.9,-28.8,82.9,-38.4,71.9C-48,61,-52.7,47.1,-62.2,34.6C-71.6,22.1,-85.8,11.1,-89.3,-2C-92.9,-15.1,-85.8,-30.3,-73.6,-38.1C-61.5,-45.9,-44.2,-46.4,-31.1,-49.7C-18,-53.1,-9,-59.4,1.9,-62.6C12.8,-65.9,25.6,-66.3,34,-60.2Z" transform="translate(100 100)" />
+    </svg>
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  
+  </head>
+
+  <header>
+    <nav>
+      <a href="javascript:void(0);" class="icon" onClick="toggle()">
+        <i class="fa fa-bars"></i>
+      </a>
+
+      <div id="links">
+          <a href="../html/home.html">Página Principal</a>
+          <a href="../html/addfriend.html">Adicionar Amigos</a>
+          <a href="../html/event.html">Procurar Eventos</a>
+          <a href="../html/map.html">Mapa</a>
+          <a href="../html/chat.html">Chats</a>
+          <a href="../html/emergency.html">Emergência</a>
+          <a href="../html/index.html">Logout</a>
+      </div>
+      
+      <div id="name">
+        <p>NightNET</p>
+      </div>
+    </nav>
+</header>
+
+  <body>
+
+    <!--Digite seu body aqui-->
+
+    <!--ATIVAR NOTIFICAÇÃO-->
+
+    <div class="notify-alert-box">
+      <p>Aceita receber notificações sobre novos eventos?</p>
+      <div class="buttons">
+        <button id="notify-cancel-button">Cancelar</button>
+        <button id="notify-button">Aceitar</button>
+
+      </div>
+
+    </div>
+
+    <!--BARRA PESQUISA-->
+    <div class="search-container">
+        <input type="search" id="search-bar" placeholder="Pesquisar Evento...">
+        <ul id="search-results"></ul>
+      </div>
+      
+      <!--CARDS-->
+      <div class="container">
+        <div class="item-container">
+          <div class="img-container">
+            <img src="../img/night-market-rooftop.jpg" alt="imagem do evento">
+          </div>
+      
+          <div class="body-container">
+            <div class="overlay"></div>
+      
+            <div class="event-info">
+              <p class="title">Night Market Rooftop</p>
+              <div class="separator"></div>
+              <p class="info">Belo Horizonte, MG</p>
+              <p class="price">R$ 50,00</p>
+      
+              <div class="additional-info">
+                <p class="info">
+                  <i class="fas fa-map-marker-alt"></i>
+                  Buritis BH
+                </p>
+                <p class="info">
+                  <i class="far fa-calendar-alt"></i>
+                  19/05/2023
+                </p>
+      
+                <p class="info description">
+                  Welcome! Everyone has a unique perspective after reading a book, and we would love you to share yours with us! We meet one Sunday evening <span>more...</span>
+                </p>
+              </div>
+            </div>
+            <button class="action">Comprar</button>
+          </div>
+        </div>
+      
+        <div class="item-container">
+          <div class="img-container">
+            <img src="../img/chale.jpg" alt="imagem do evento">
+          </div>
+      
+          <div class="body-container">
+            <div class="overlay"></div>
+      
+            <div class="event-info">
+              <p class="title">Carna Chalé</p>
+              <div class="separator"></div>
+              <p class="info">Belo Horizonte, MG</p>
+              <p class="price">R$ 100,00</p>
+      
+              <div class="additional-info">
+                <p class="info">
+                  <i class="fas fa-map-marker-alt"></i>
+                  Clube Chalezinho
+                </p>
+                <p class="info">
+                  <i class="far fa-calendar-alt"></i>
+                  10/02/2023
+                </p>
+      
+                <p class="info description">
+                  Welcome! Everyone has a unique perspective after reading a book, and we would love you to share yours with us! We meet one Sunday evening <span>more...</span>
+                </p>
+              </div>
+            </div>
+            <button class="action">Comprar</button>
+          </div>
+        </div>
+      
+        <div class="item-container">
+          <div class="img-container">
+            <img src="../img/expoagro.jpg" alt="imagem do evento">
+          </div>
+      
+          <div class="body-container">
+            <div class="overlay"></div>
+      
+            <div class="event-info">
+              <p class="title">Expo Agro</p>
+              <div class="separator"></div>
+              <p class="info">Belo Horizonte, MG</p>
+              <p class="price">R$ 200,00</p>
+      
+              <div class="additional-info">
+                <p class="info">
+                  <i class="fas fa-map-marker-alt"></i>
+                  R. João Dias Duarte, 1450
+                </p>
+                <p class="info">
+                  <i class="far fa-calendar-alt"></i>
+                  07 jul - 2023 • 22:00 > 16 jul - 2023 • 23:59
+                </p>
+      
+                <p class="info description">
+                  Welcome! Everyone has a unique perspective after reading a book, and we would love you to share yours with us! We meet one Sunday evening <span>more...</span>
+                </p>
+              </div>
+            </div>
+            <button class="action">Comprar</button>
+          </div>
+        </div>
+      </div>
+      
+
+
+  <!--CALENDÁRIO-->
+
+    <body>
+      <div class="container">
+        <div class="left">
+          <div class="calendar">
+            <div class="month">
+              <i class="fas fa-angle-left prev"></i>
+              <div class="date">Dezembro 2015</div>
+              <i class="fas fa-angle-right next"></i>
+            </div>
+            <div class="weekdays">
+              <div>Dom</div>
+              <div>Seg</div>
+              <div>Ter</div>
+              <div>Qua</div>
+              <div>Qui</div>
+              <div>Sex</div>
+              <div>Sáb</div>
+            </div>
+            <div class="days"></div>
+            <div class="goto-today">
+              <div class="goto">
+                <input type="text" placeholder="mm/yyyy" class="date-input" />
+                <button class="goto-btn">Ir</button>
+              </div>
+              <button class="today-btn">Hoje</button>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="today-date">
+            <div class="event-day">Qua</div>
+            <div class="event-date">12 de Dezembro 2022</div>
+          </div>
+          <div class="events"></div>
+          <div class="add-event-wrapper">
+            <div class="add-event-header">
+              <div class="title">Adicionar Evento</div>
+              <i class="fas fa-times close"></i>
+            </div>
+            <div class="add-event-body">
+              <div class="add-event-input">
+                <input type="text" placeholder="Event Name" class="event-name" />
+              </div>
+              <div class="add-event-input">
+                <input
+                  type="text"
+                  placeholder="Event Time From"
+                  class="event-time-from"
+                />
+              </div>
+              <div class="add-event-input">
+                <input
+                  type="text"
+                  placeholder="Event Time To"
+                  class="event-time-to"
+                />
+              </div>
+            </div>
+            <div class="add-event-footer">
+              <button class="add-event-btn">Adicionar Evento</button>
+            </div>
+          </div>
+        </div>
+        <button class="add-event">
+          <i class="fas fa-plus"></i>
+        </button>
+      </div>
+  
+      <script src="script.js"></script>
+    </body>
+  </html>
+
+
+    <!--Coloque seus scripts aqui-->
+    <script src="/js/event.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+
+  <footer>
+
+    <!--Digite seu body aqui-->
+
+  </footer>
+
+</html>

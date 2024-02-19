@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chat</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-purle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/chat.css">
+  <svg id="blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <path fill="#5A279090" d="M34,-60.2C42.4,-54.1,46.4,-41.6,53.9,-30.5C61.3,-19.4,72.2,-9.7,77.9,3.3C83.6,16.3,84,32.5,76,42.6C67.9,52.6,51.4,56.5,37.3,64.8C23.2,73.2,11.6,86.1,-1.4,88.5C-14.4,90.9,-28.8,82.9,-38.4,71.9C-48,61,-52.7,47.1,-62.2,34.6C-71.6,22.1,-85.8,11.1,-89.3,-2C-92.9,-15.1,-85.8,-30.3,-73.6,-38.1C-61.5,-45.9,-44.2,-46.4,-31.1,-49.7C-18,-53.1,-9,-59.4,1.9,-62.6C12.8,-65.9,25.6,-66.3,34,-60.2Z" transform="translate(100 100)" />
+  </svg>
+</head>
+<header>
+  <nav>
+    <a href="javascript:void(0);" class="icon" onClick="toggle()">
+      <i class="fa fa-bars"></i>
+    </a>
+
+    <div id="links">
+        <a href="../html/home.html">Página Principal</a>
+        <a href="../html/addfriend.html">Adicionar Amigos</a>
+        <a href="../html/event.html">Procurar Eventos</a>
+        <a href="../html/map.html">Mapa</a>
+        <a href="../html/chat.html">Chats</a>
+        <a href="../html/emergency.html">Emergência</a>
+        <a href="../html/index.html">Logout</a>
+    </div>
+    
+    <div id="name">
+      <p>NightNET</p>
+    </div>
+  </nav>
+</header>
+<body>
+  <div class="container">
+    <div class="sidebar" style="background-color: #ffffff90;">
+      <div class="profile">
+      </div>
+      <h1 style="font-weight: bolder; font-size: 30px; text-align: center; font-family: 'Arial', sans-serif; color: #272262;">Amigos</h1>
+      <ul style="font-weight: bolder; font-size: 20px; font-family: 'Arial', sans-serif; color: #5A2790;" id="friendList"></ul>
+    </div>
+
+    <div class="main" style="background-color: #ffffff90;">
+      <div class="header">
+        <div class="call-buttons">
+          <h1 style="font-weight: bolder; font-size: 30px; text-align: center; font-family: 'Arial', sans-serif; color: #272262;">Mensagens</h1> 
+        </div>
+      </div>
+      <div id="messages"></div>
+
+      <div id="messageInputContainer">
+        <input type="text" id="messageInput" placeholder="Digite uma mensagem">
+        <button class="w3-button w3-green w3-section w3-round" id="sendButton">Enviar</button>
+        <button class="w3-button w3-red w3-section w3-round" style="margin: 10px;" id="deleteChatButton" data-friend-name="">Excluir Chat</button>
+        <input class="w3-button w3-blue w3-section w3-round" type="file" id="imageInput" accept="image/*">
+        <button class="w3-button w3-green w3-section w3-round" id="sendImageButton" style="margin: 10px;">Enviar Imagem</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/addfriend.js"></script>
+  <script src="../js/chat.js"></script>
+</body>
+</html>

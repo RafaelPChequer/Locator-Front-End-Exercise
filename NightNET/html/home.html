@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>[Nightnet Perfil]</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../css/home.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-purle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" rel="stylesheet">
+    <style>
+        html, body, h1, h2, h3, h4, h5 {
+            font-family: "[Open Sans](poe://www.poe.com/_api/key_phrase?phrase=Open%20Sans&prompt=Tell%20me%20more%20about%20Open%20Sans.)", sans-serif
+        }
+    </style>
+    <svg id="blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#5A279090" d="M34,-60.2C42.4,-54.1,46.4,-41.6,53.9,-30.5C61.3,-19.4,72.2,-9.7,77.9,3.3C83.6,16.3,84,32.5,76,42.6C67.9,52.6,51.4,56.5,37.3,64.8C23.2,73.2,11.6,86.1,-1.4,88.5C-14.4,90.9,-28.8,82.9,-38.4,71.9C-48,61,-52.7,47.1,-62.2,34.6C-71.6,22.1,-85.8,11.1,-89.3,-2C-92.9,-15.1,-85.8,-30.3,-73.6,-38.1C-61.5,-45.9,-44.2,-46.4,-31.1,-49.7C-18,-53.1,-9,-59.4,1.9,-62.6C12.8,-65.9,25.6,-66.3,34,-60.2Z" transform="translate(100 100)" />
+    </svg>
+</head>
+
+<header>
+    <nav>
+      <a href="javascript:void(0);" class="icon" onClick="toggle()">
+        <i class="fa fa-bars"></i>
+      </a>
+
+      <div id="links">
+          <a href="../html/home.html">Página Principal</a>
+          <a href="../html/addfriend.html">Adicionar Amigos</a>
+          <a href="../html/event.html">Procurar Eventos</a>
+          <a href="../html/map.html">Mapa</a>
+          <a href="../html/chat.html">Chats</a>
+          <a href="../html/emergency.html">Emergência</a>
+          <a href="../html/index.html">Logout</a>
+      </div>
+      
+      <div id="name">
+        <p>NightNET</p>
+      </div>
+    </nav>
+</header>
+
+<body class="corpo"> 
+    
+    <div id="navDemo" class="w3-bar-block w3-theme-d3 w3-hide w3-hide-large w3-hide-medium w3-large"> <a href="#"
+            class="w3-bar-item w3-button w3-padding-large">Link 1</a> <a href="#"
+            class="w3-bar-item w3-button w3-padding-large">Link 2</a> <a href="#"
+            class="w3-bar-item w3-button w3-padding-large">Link 3</a> <a href="#"
+            class="w3-bar-item w3-button w3-padding-large">Minha Conta</a> </div> 
+    <div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">
+        
+        <div class="w3-row">
+            
+            <div class="w3-col m2"> 
+                <div class="w3-card w3-round w3-white">
+                    <div class="w3-container">
+                        <h3 id= "MeuPerfil" class="w3-center"></h3>
+              
+                        <label class="picture" for="picture__input" tabIndex="0">
+                            <span class="picture__image"></span>
+                          </label>
+                          
+                          <input type="file" name="picture__input" id="picture__input">
+                        <hr>
+                        <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> Belo Horizonte, Brasil</p>
+                        <p><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i><h8 id="Idade"></h8></p>
+                       
+                    </div>
+                </div> <br> 
+                <div class="w3-card w3-round">
+                    <div class="w3-white"> <button onclick="myFunction('Demo1')"
+                            class="w3-button w3-block w3-theme-l1 w3-left-align"><i
+                                class="fa fa-circle-o-notch fa-fw w3-margin-right"></i> Meus Chats</button>
+                        <div id="Demo1" class="w3-hide w3-container">
+                            <a href="../html/chat.html">
+                                <button class="w3-button w3-green w3-round">Ir Para Chats</button>
+                            </a>
+                        </div> <button onclick="myFunction('Demo2')"
+                            class="w3-button w3-block w3-theme-l1 w3-left-align"><i
+                                class="fa fa-calendar-check-o fa-fw w3-margin-right"></i> Meus Eventos</button>
+                        <div id="Demo2" class="w3-hide w3-container">
+                            <a href="../html/event.html">
+                                <button class="w3-button w3-purple w3-round">Ir Para Eventos</button>
+                            </a>
+                        </div> <button onclick="myFunction('Demo3')"
+                            class="w3-button w3-block w3-theme-l1 w3-left-align"><i
+                                class="fa fa-users fa-fw w3-margin-right"></i> Logout</button>
+                        <div id="Demo3" class="w3-hide w3-container">
+                            <div class="w3-row-padding">
+                                <a href="../html/index.html">
+                                    <button class="w3-button w3-red w3-round">Sair</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div> <br> 
+                <div class="w3-card w3-round w3-white w3-hide-small">
+                    <div class="w3-container">
+                        <p>Interesses</p>
+                        <p>
+                            <span class="w3-tag w3-small w3-theme-d5 selectable">Notícias</span>
+                            <span class="w3-tag w3-small w3-theme-d3 selectable">Etiquetas</span>
+                            <span class="w3-tag w3-small w3-theme-d1 selectable">Jogos</span>
+                            <span class="w3-tag w3-small w3-theme-d1 selectable">Amigos</span>
+                            <span class="w3-tag w3-small w3-theme-l2 selectable">Comida</span>
+                            <span class="w3-tag w3-small w3-theme-l3 selectable">Design</span>
+                            <span class="w3-tag w3-small w3-theme-l4 selectable">Arte</span>
+                            <span class="w3-tag w3-small w3-theme-l5 selectable">Fotos</span>
+                        </p>
+                    </div>
+                </div>
+                
+                <style>
+                    .selectable {
+                        cursor: pointer;
+                    }
+                
+                    .selected {
+                        background-color: purple;
+                        color: white;
+                    }
+                </style>
+                
+                <script>
+                    var selectableTags = document.getElementsByClassName('selectable');
+                
+                    function toggleSelected() {
+                        this.classList.toggle('selected');
+                    }
+                
+                    for (var i = 0; i < selectableTags.length; i++) {
+                        selectableTags[i].addEventListener('click', toggleSelected);
+                    }
+                </script>
+                 <br>
+               
+                 <div class="w3-container w3-display-container w3-round w3-theme-l4 w3-border w3-theme-border w3-margin-bottom w3-hide-small" style="color: black;">
+                    <span onclick="this.parentElement.style.display='none'" class="w3-button w3-theme-l3 w3-display-topright">
+                        <i class="fa fa-remove" style="color: #ffffff;"></i>
+                    </span>
+                    <p style="color: #ffffff;"><strong>Olá!</strong></p>
+                    <p style="color: #ffffff;">A NightNET te deseja um bom dia!</p>
+                </div>
+                
+
+                
+            </div>
+
+            
+            <div class="w3-col m7">
+
+                <div class="w3-row-padding">
+                    <div class="w3-col m12">
+                        <div class="w3-card w3-round w3-white">
+                            <div class="w3-container w3-padding">
+                                <h6 class="w3-opacity" id="bio">Biografia </h6>
+                                <input type="text" id="biografia">
+                                <button type="button" class="w3-button w3-theme" id="botao"><i class="fa fa-pencil"></i>
+                                    &nbsp;Change</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+                    <i class="fa fa-user-circle w3-left w3-margin-right" style="font-size:60px"></i>
+                    <span class="w3-right w3-opacity">1 min</span>
+                    <h4>Savassi Lounge</h4><br>
+                    <hr class="w3-clear">
+                    <p>O Savassi Lounge é o lugar perfeito para curtir uma festa animada! Vem pra cá e aproveite a noite ao som de boa música e ótimas companhias.</p>
+                    <div class="w3-row-padding" style="margin:0 -16px">
+                    </div>
+                    <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom w3-round" id="like-button-0" onclick="likePost(0)"><i class="fa fa-thumbs-up"></i>
+                        &nbsp;Curtir</button>
+                    <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom w3-round" onclick="commentPost(0)"><i class="fa fa-comment"></i>
+                        &nbsp;Comentar</button>
+                    <div id="comments-0"></div>
+                </div>
+                
+                <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+                    <i class="fa fa-user-circle w3-left w3-margin-right" style="font-size:60px"></i>
+                    <span class="w3-right w3-opacity">16 min</span>
+                    <h4>Alambique BH</h4><br>
+                    <hr class="w3-clear">
+                    <p>Vem pro Alambique BH e divirta-se com os melhores drinks e muita música boa! A festa aqui nunca para.</p>
+                    <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom w3-round" id="like-button-1" onclick="likePost(1)"><i class="fa fa-thumbs-up"></i>
+                        &nbsp;Curtir</button>
+                    <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom w3-round" onclick="commentPost(1)"><i class="fa fa-comment"></i>
+                        &nbsp;Comentar</button>
+                    <div id="comments-1"></div>
+                </div>
+                
+                <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+                    <i class="fa fa-user-circle w3-left w3-margin-right" style="font-size:60px"></i>
+                    <span class="w3-right w3-opacity">32 min</span>
+                    <h4>Belo Horizonte Hall</h4><br>
+                    <hr class="w3-clear">
+                    <p>Já tinha visto isso?</p>
+                    <p>Vem curtir com a gente no Belo Horizonte Hall! Aqui a diversão é garantida, com muita música e energia positiva.</p>
+                    <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom w3-round" id="like-button-2" onclick="likePost(2)"><i class="fa fa-thumbs-up"></i>
+                        &nbsp;Curtir</button>
+                    <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom w3-round" onclick="commentPost(2)"><i class="fa fa-comment"></i>
+                        &nbsp;Comentar</button>
+                    <div id="comments-2"></div>
+                </div>                               
+            </div>
+
+            <script>
+                function likePost(postIndex) {
+  var likeButton = document.getElementById('like-button-' + postIndex);
+  likeButton.classList.toggle('w3-liked');
+  console.log('Post', postIndex, 'curtido!');
+}
+
+              
+                function commentPost(postIndex) {
+                  // Lógica para adicionar um comentário
+                  // Aqui você pode criar um campo de entrada de texto para o usuário digitar o comentário e, em seguida, exibi-lo junto com o horário atual
+                  var commentInput = prompt('Digite seu comentário:');
+                  if (commentInput !== null && commentInput !== '') {
+                    var currentTime = new Date().toLocaleTimeString();
+                    var commentsDiv = document.getElementById('comments-' + postIndex);
+                    var commentElement = document.createElement('p');
+                    commentElement.innerHTML = '<strong>Comentário às ' + currentTime + ':</strong> ' + commentInput;
+                    commentsDiv.appendChild(commentElement);
+                  }
+                }
+              </script>
+
+           
+            <div class="w3-col m2">
+                <div class="w3-card w3-round w3-white w3-center">
+                    <div class="w3-container">
+                        <img src="../img/logo.png" style="width: 100%;">
+                    </div>
+                </div>
+                <br>
+
+                <div class="w3-card w3-round w3-white w3-center">
+<div class="w3-container">
+  <div id="peopleButtonContainer"></div>
+  <h5 id="addText">Adicionar Amigos?</h5>
+  <div class="w3-row w3-opacity">
+    <div class="w3-half">
+      <button id="acceptButton" class="w3-button w3-block w3-green w3-section w3-round" title="Accept"><i class="fa fa-check"></i></button>
+    </div>
+    <div class="w3-half">
+      <button id="declineButton" class="w3-button w3-block w3-red w3-section w3-round" title="Decline"><i class="fa fa-remove"></i></button>
+    </div>
+  </div>
+  </div>
+</div>
+
+<script>
+    document.getElementById("acceptButton").addEventListener("click", function() {
+      window.location.href = "addfriend.html";
+    });
+  
+    document.getElementById("declineButton").addEventListener("click", function() {
+      var buttonContainer = document.getElementById("peopleButtonContainer");
+  
+      // Remover os botões existentes
+      var addText = document.getElementById("addText");
+      var acceptButton = document.getElementById("acceptButton");
+      var declineButton = document.getElementById("declineButton");
+      addText.parentNode.removeChild(addText);
+      acceptButton.parentNode.removeChild(acceptButton);
+      declineButton.parentNode.removeChild(declineButton);
+  
+      // Criar o novo botão com o ícone de pessoas
+      var text = document.createElement("p");
+      var peopleButton = document.createElement("button");
+      peopleButton.className = "w3-button w3-block w3-blue w3-section w3-round";
+      peopleButton.title = "People";
+      peopleButton.addEventListener("click", function() {
+      window.location.href = "addFriend.html";
+      });
+
+      var peopleIcon = document.createElement("i");
+      peopleIcon.className = "fa fa-users";
+      peopleButton.appendChild(peopleIcon);
+      buttonContainer.appendChild(peopleButton);
+    });
+  </script>
+       
+                <br>
+
+                <div class="w3-card w3-round w3-white w3-padding-16 w3-center">
+                    <h5>Ir para o Mapa</h5>
+                    <button class="w3-button w3-blue w3-round-large w3-xlarge" onclick="location.href='map.html'">
+                    <i class="fa fa-map w3-text-white"></i>
+                    </button>                                                          
+                </div>
+                <br>
+
+                <div class="w3-card w3-round w3-white w3-padding-32 w3-center">
+                    <h5>Mensagem de Emergência</h5>
+                    <button class="w3-button w3-red w3-round-large w3-xlarge" onclick="location.href='emergency.html'">
+                        <i class="fa fa-envelope w3-text-white"></i>
+                    </button>
+                </div>
+
+                <br>
+
+                <div class="w3-card w3-round w3-white w3-padding-16 w3-center">
+                    <h5>Configuração</h5>
+                    <button class="w3-button w3-grey w3-round-large w3-xlarge" onclick="location.href='edit.html'">
+                        <i class="fa fa-cog"></i>
+                    </button>                                                          
+                </div>
+                
+                <br>
+                
+                
+
+               
+            </div>
+
+           
+        </div>
+
+        <script src="../js/script.js"></script>
+        <script src="../js/home.js"></script>
+        <script src="../js/signup.js"></script>
+    </div>
+    <br>
+
+</body>
+
+<footer class="bg-light py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h4>Links Úteis</h4>
+                <ul class="list-unstyled">
+                    <li><a href="../html/home.html">Página Principal</a></li>
+                    <li><a href="../html/addfriend.html">Adicionar Amigos</a></li>
+                    <li><a href="/html/event.html">Procurar Eventos</a></li>
+                    <li><a href="../html/map.html">Mapa</a></li>
+                    <li><a href="../html/chat.html">Chats</a></li>
+                    <li><a href="../html/emergency.html">Emergência</a></li>
+                    <li><a href="../html/index.html">Logout</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h4>Sobre Nós</h4>
+                <p>NightNET é uma plataforma para conectar pessoas e promover eventos noturnos. Desfrute de uma vida noturna emocionante com a NightNET.</p>
+            </div>
+            <div class="col-md-4">
+                <h4>Contato</h4>
+                <p>Email: info@nightnet.com</p>
+                <p>Telefone: +55 123456789</p>
+            </div>
+        </div>
+    </div>
+    <div class="bg-dark text-white py-2">
+        <div class="container">
+            <p class="m-0 text-center">© 2023 NightNET. Todos os direitos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+</html>

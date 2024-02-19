@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensagem de Emergência</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+    <h1>Emergência</h1>
+
+    <br><br>
+
+    <div class="form-group">
+        <label for="numero">Selecione um número:</label>
+        <select id="numero" class="form-select custom-select">
+            <option value="" disabled selected hidden>Selecione uma opção</option>
+            <option value="0">Os Números Adicionados Aparecerão Aqui:</option>
+        </select>
+    </div>
+
+    <br><br>
+
+    <div class="form-group">
+        <label for="inputMensagem">Mensagem de Emergência:</label>
+        <input type="text" id="inputMensagem" class="form-control custom-input">
+    </div>
+
+    <button onclick="realizarChamada()" class="btn btn-danger">Enviar Mensagem</button>
+
+    <br><br>
+
+    <label>Contatos:</label>
+    <ul id="listaNumeros"></ul>
+
+    <a href="adicionarNumeros.html" class="btn btn-secondary" style="margin: 10px; box-shadow: 0 0 0.5em 0.1em red;">Adicionar Novos Números</a>
+</div>
+
+<script src="../js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Números</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <h1>Adicionar Números</h1>
+
+    <br><br>
+
+    <div class="form-group">
+        <label for="inputIndice">Nome do Contato:</label>
+        <input type="text" id="inputIndice" class="form-control">
+    </div>
+
+    <br><br>
+
+    <div class="form-group">
+        <label for="inputNumero">Insira um número:</label>
+        <input type="text" id="inputNumero" class="form-control">
+        <p>Os números devem ser escritos em um formato específico, por exemplo: Um número +55 (31)98888-8888 deve ser escrito no formato 5531988888888! Os números brasileiros obrigatoriamente devem conter o 55 no início e o DDD da região!</p>
+    </div>
+
+    <br><br>
+
+    <button onclick="adicionarNumero()" class="btn btn-secondary">Adicionar</button>
+
+    <a href="index.html" class="btn btn-secondary" style="margin: 10px; box-shadow: 0 0 0.5em 0.1em red;">Voltar</a>
+
+    <div class="form-group">
+        <label class="noDisplay" for="numero">Selecione um número:</label>
+        <select class="noDisplay form-select" id="numero">
+            <option value="" disabled selected hidden>Selecione uma opção</option>
+            <option value="0">Os Números Adicionados Aparecerão Aqui</option>
+        </select>
+    </div>
+
+    <br><br>
+
+    <ul class="noDisplay" id="listaNumeros"></ul>
+</div>
+
+<script src="../js/script.js"></script>
+</body>
+</html>
